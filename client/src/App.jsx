@@ -1,16 +1,16 @@
-import { useState } from 'react'
 import './App.css'
-
+import {  Routes, Route } from 'react-router-dom'
+import Landing from './pages/Landing.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        
-      </div>
-    </>
+    
+    <Routes>
+      <Route path='/' element={<Landing />} />
+    </Routes>
+
+     
+    
   )
 }
 
